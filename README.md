@@ -17,13 +17,13 @@ that would cost somebody money if they broke.
 
 ### Selected work
 
-**[gotakt-claude-dashboard](https://github.com/maroxd3/gotakt-claude-dashboard)**
+**[gotakt-claude-dashboard](https://github.com/gotakt/gotakt-claude-dashboard)**
 A local control panel for parallel Claude Code sessions. Reads the transcripts
 Claude Code already writes and shows which session is waiting for you, which one
 stopped mid-turn, and what each has cost. State comes from Claude Code hooks with
 a documented fallback, one file, no dependencies, 43 tests.
 
-**[TÜV Prüfstelle Pro](https://github.com/maroxd3/tuv-workflow-web)**
+**[TÜV Prüfstelle Pro](https://github.com/gotakt/tuv-workflow-web)**
 Management system for vehicle inspection centres: scheduling, vehicles, defect
 catalogue, statistics and printable reports. React/Vite against an Express API
 and MariaDB.
