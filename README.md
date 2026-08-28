@@ -1,62 +1,67 @@
 ## Marwan Saleh
 
-Software for small companies that depend on it — Hannover, Germany.
+Software für kleine Betriebe, die sich darauf verlassen — Hannover.
 
-I run **[gotakt](https://gotakt.de)**. Most of what I ship is a working system
-for one business rather than a library: a time clock on a tablet by the door, a
-proof-of-service portal a cleaning company hands to its customers, a workflow
-that replaces a folder of PDFs and a shared spreadsheet.
+Ich führe **[gotakt](https://gotakt.de)**. Was ich abliefere, ist meist ein
+fertiges System für einen einzelnen Betrieb und keine Bibliothek: eine
+Stempeluhr auf dem Tablet neben der Tür, ein Nachweisportal, das eine
+Gebäudereinigung ihren Kunden in die Hand gibt, ein Ablauf, der einen Ordner
+voller PDFs und eine geteilte Tabelle ersetzt.
 
-That work comes with a particular constraint. When it breaks, somebody's hours
-are wrong, or an invoice cannot be issued that week. Not an outage — a person
-with a real problem. It changes what "done" means.
+Diese Art Arbeit hat eine Eigenheit. Wenn sie ausfällt, sind die Stunden von
+jemandem falsch, oder eine Rechnung geht diese Woche nicht raus. Keine Störung,
+sondern ein Mensch mit einem Problem. Das ändert, was „fertig" bedeutet.
 
-### How I build
+### Wie ich arbeite
 
-**A small stack, and few dependencies.** Every dependency is something I have to
-understand on the day it fails, usually while somebody is waiting.
+**Ein kleiner Stapel, wenige Abhängigkeiten.** Jede Abhängigkeit ist etwas, das
+ich an dem Tag verstehen muss, an dem sie ausfällt — meistens, während jemand
+wartet.
 
-**Plain language in the interface.** An error says what actually happened and
-what to do next. "Failed to fetch" is a sentence for me, not for the person at
-the front desk.
+**Klare Sprache in der Oberfläche.** Eine Fehlermeldung sagt, was wirklich
+passiert ist und was jetzt zu tun ist. „Failed to fetch" ist ein Satz für mich,
+nicht für die Person am Empfang.
 
-**Tests where the money is.** Not a coverage number — tests around the parts
-that would cost somebody real money if they were quietly wrong. A test that
-proves nothing is worse than no test, because it looks like proof.
+**Tests dort, wo Geld hängt.** Keine Abdeckungsquote, sondern Tests um die
+Stellen, die jemanden echtes Geld kosten würden, wenn sie still falsch wären.
+Ein Test, der nichts beweist, ist schlimmer als kein Test — er sieht aus wie
+ein Beweis.
 
-**Measured, not assumed.** Before a document claims a system does something, I
-check it against the running system. Most of the bugs worth finding live in the
-gap between what software does and what its documentation says about it.
+**Gemessen, nicht angenommen.** Bevor eine Dokumentation behauptet, ein System
+tue etwas, prüfe ich es gegen das laufende System. Die Fehler, die sich zu
+finden lohnen, liegen meistens zwischen dem, was Software tut, und dem, was
+ihre Dokumentation darüber sagt.
 
-### Selected work
+### Ausgewählte Arbeiten
 
 **[TÜV Prüfstelle Pro](https://github.com/gotakt/tuv-workflow-web)**
-Management system for vehicle inspection centres: scheduling, vehicles, defect
-catalogue, statistics and printable inspection reports. React/Vite against an
-Express API and MariaDB.
+Verwaltungssystem für TÜV-Prüfstellen: Terminplanung, Fahrzeuge,
+Mängelkatalog, Statistik und druckbare Prüfberichte. React/Vite gegen eine
+Express-Schnittstelle und MariaDB.
 
 **[gotakt-claude-dashboard](https://github.com/gotakt/gotakt-claude-dashboard)**
-A local control panel for parallel Claude Code sessions. It reads the
-transcripts Claude Code already writes and shows which session is waiting for
-you, which one stopped mid-turn, and what each has cost. State comes from Claude
-Code hooks with a documented fallback for when they are unavailable. One file,
-no dependencies.
+Ein lokales Bedienfeld für parallel laufende Claude-Code-Sitzungen. Es liest
+die Mitschriften, die Claude Code ohnehin schreibt, und zeigt, welche Sitzung
+auf eine Antwort wartet, welche mitten im Zug stehengeblieben ist und was jede
+gekostet hat. Der Zustand kommt aus Claude-Code-Hooks, mit dokumentiertem
+Rückfallweg für den Fall, dass sie nicht greifen. Eine Datei, keine
+Abhängigkeiten.
 
 **[autobahn-strava](https://github.com/gotakt/autobahn-strava)**
-Strava for Autobahn drives — except the score rewards the best *legal* drive
-rather than the fastest one.
+Strava für Autobahnfahrten — nur dass die beste *legale* Fahrt gewertet wird
+und nicht die schnellste.
 
-Client work lives in private repositories.
+Kundenarbeit liegt in privaten Repositories.
 
-### Stack
+### Womit
 
 | | |
 |---|---|
-| **Frontend** | React · Vite · Next.js · Astro · Tailwind |
-| **Backend** | Node · Express · Firebase · Supabase / Postgres · MariaDB |
-| **Testing** | Vitest · Playwright · emulator-based security-rule tests |
-| **Also** | Python · Tauri · Capacitor |
+| **Oberfläche** | React · Vite · Next.js · Astro · Tailwind |
+| **Server** | Node · Express · Firebase · Supabase / Postgres · MariaDB |
+| **Prüfung** | Vitest · Playwright · Regeltests gegen Emulatoren |
+| **Außerdem** | Python · Tauri · Capacitor |
 
-### Contact
+### Kontakt
 
 [kontakt@gotakt.de](mailto:kontakt@gotakt.de) · [gotakt.de](https://gotakt.de)
