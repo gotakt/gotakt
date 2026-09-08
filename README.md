@@ -44,8 +44,9 @@ Ein lokales Bedienfeld für parallel laufende Claude-Code-Sitzungen. Es liest
 die Mitschriften, die Claude Code ohnehin schreibt, und zeigt, welche Sitzung
 auf eine Antwort wartet, welche mitten im Zug stehengeblieben ist und was jede
 gekostet hat. Der Zustand kommt aus Claude-Code-Hooks, mit dokumentiertem
-Rückfallweg für den Fall, dass sie nicht greifen. Eine Datei, keine
-Abhängigkeiten.
+Rückfallweg für den Fall, dass sie nicht greifen. Das Dashboard ist eine
+einzige Python-Datei ohne externe Abhängigkeiten; für die Hooks kommen drei
+kleine Skripte dazu.
 
 **[autobahn-strava](https://github.com/gotakt/autobahn-strava)**
 Strava für Autobahnfahrten — nur dass die beste *legale* Fahrt gewertet wird
