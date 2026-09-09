@@ -49,8 +49,9 @@ einzige Python-Datei ohne externe Abhängigkeiten; für die Hooks kommen drei
 kleine Skripte dazu.
 
 **[autobahn-strava](https://github.com/gotakt/autobahn-strava)**
-Strava für Autobahnfahrten — nur dass die beste *legale* Fahrt gewertet wird
-und nicht die schnellste.
+GPS-/Capacitor-App für Autobahnfahrten: Legal-Drive-Score statt Top-Speed.
+Die zentrale Safety-Regel gilt für lokale und Online-Ranglisten und ist mit
+Regressionstests und gezielten Gegenproben in CI abgesichert.
 
 Kundenarbeit liegt in privaten Repositories.
 
